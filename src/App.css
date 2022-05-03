@@ -1,0 +1,100 @@
+.d-flex {
+    display: flex;
+}
+
+button {
+    border: none;
+    border-radius: 5px;
+    background-color: darksalmon;
+    margin: 10px;
+    padding: 2px;
+    width: 110px;
+    height: 35px;
+}
+
+.s-btv {
+    justify-content: space-between;
+}
+
+.p100 {
+    padding: 20px;
+}
+
+h1 {
+    color: darksalmon;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.j-center {
+    justify-content: center;
+}
+
+.a-center {
+    align-items: center;
+}
+
+button:hover {
+    background-color: #f64223;
+    cursor: pointer;
+}
+
+input {
+    margin: 10px;
+    border-radius: 5px;
+    width: 210px;
+    height: 40px;
+    padding: 2px;
+}
+
+.toolbar-line {
+    border-bottom: 3px solid white;
+
+}
+
+.favorite-symbol {
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.favorite-symbol {
+    font-size: 16px;
+    cursor: pointer;
+    padding-right: 5px;
+}
+
+.s-evenly {
+    justify-content: space-evenly;
+}
+
+.card {
+    border: 2px solid white;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 10px;
+}
+
+
+.topic-hover {
+    cursor: pointer;
+    color: #e38a7b;
+
+
+}
+.topic-hover:hover {
+    cursor: pointer;
+    color: #f64223;
+
+
+}
+
+.margin10 {
+    margin: 10px;
+}
+
+.comment-url {
+    width: 200px;
+    margin: 5px;
+}
