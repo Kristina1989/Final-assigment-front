@@ -53,8 +53,8 @@ const Register = () => {
                 <h1>REGISTER</h1>
                 <input ref={usernameRef} type="text" placeholder="Username"/>
                 <input ref={emailRef} type="text" placeholder="Email"/>
-                <input ref={passwordRef} type="text" placeholder="Password"/>
-                <input ref={passwordTwoRef} type="text" placeholder="Repeat Password"/>
+                <input ref={passwordRef} type="password" placeholder="Password"/>
+                <input ref={passwordTwoRef} type="password" placeholder="Repeat Password"/>
                 <div>
                     <button onClick={sendRequest}>Submit</button>
                     <button onClick={() => nav(-1)}>Go back</button>

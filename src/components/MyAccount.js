@@ -22,13 +22,17 @@ const MyAccount = () => {
                 setUser(res.user)
             }
         })
+        imgUrlRef.current.value = ""
     }
 
     return (
         <div>
             <div className="d-flex j-center a-center margin10">
+                <h2>{user?.username} Account</h2>
+            </div>
+            <div className="d-flex j-center a-center margin10 small-screen-column">
                 <img style={{width: "50px",
-                    margin: "5px", borderRadius: "50%"}} src={user?.userImage} alt=""/>
+                    margin: "5px", borderRadius: "5%"}} src={user?.userImage} alt=""/>
                 <input style={{height: "30px" }} ref={imgUrlRef} type="text" placeholder="Change User Image Url"/>
                 <button onClick={changeUserImg}>Upload</button>
             </div>

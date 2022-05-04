@@ -32,11 +32,13 @@ const UploadTheme = () => {
     }
 
     return (
-        <div className="card d-flex column a-center">
+        <div className="card d-flex column a-center small-screen-column">
             <h1>Create Theme</h1>
-            <input ref={titleRef} type="text" placeholder="Theme Title"/>
-            <input ref={commentRef} type="text" placeholder="Comment"/>
-            <input ref={photoUrlRef} type="text" placeholder="Photo URL"/>
+            <div className="d-flex j-center a-center small-screen-column">
+                <input ref={titleRef} type="text" placeholder="Theme Title"/>
+                <input ref={photoUrlRef} type="text" placeholder="Photo URL"/>
+            </div>
+            <textarea className="card small-area" ref={commentRef} id="w3review" name="w3review" rows="10" cols="52" placeholder="Leave your comment here..."/>
             <button onClick={sendRequest}>Upload</button>
             {status && <p>{status}</p>}
         </div>

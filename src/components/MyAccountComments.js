@@ -23,7 +23,9 @@ const MyAccountComments = () => {
 
     return (
         <div>
-            {comments.map((comment, i) => <div className="card" key={i}>
+            {comments.length >0 ?
+
+               comments.map((comment, i) => <div className="card" key={i}>
 
                 <h3>by {comment.username}</h3>
                 <p>{new Intl.DateTimeFormat('lt-Lt', {
@@ -34,7 +36,10 @@ const MyAccountComments = () => {
                     minute: "numeric"}).format(comment.time)}</p>
                 <p>{comment.comment}</p>
 
-            </div>)}
+            </div>)
+                :  <div className="d-flex j-center">
+                    <h4 style={{color: "red"}}> No comments in the list</h4>
+                </div>}
         </div>
     );
 };

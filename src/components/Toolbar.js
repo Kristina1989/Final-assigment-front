@@ -26,7 +26,7 @@ const Toolbar = () => {
             credentials: "include",
         }
 
-        fetch(`http://localhost:4002/logout`, options)
+        fetch(`http://localhost:4000/logout`, options)
             .then(res => res.json())
             .then(data => {
                 if (data.success) {
@@ -38,9 +38,9 @@ const Toolbar = () => {
     }
 
     return (
-        <div className="d-flex s-btv p100 toolbar-line">
+        <div className="d-flex s-btv p100 toolbar-line small-screen-column">
             <h1 style={{cursor: 'pointer'}} onClick={() => nav('/')}>Simple Forum</h1>
-            <div>
+            <div className="d-flex s-btv p100 small-screen-column">
                 {user && <button onClick={() => nav("/myAccount")}>My Account</button>}
                 {user && <button onClick={() => nav("/notifications")}>Notifications: ({notifications.length})</button>}
                 <button onClick={() => nav("/favorites")}>Favourites ({getFavoritesIds.length})</button>

@@ -22,13 +22,15 @@ const UploadComment = ({topic, setTopic}) => {
             }
         })
 
+
     }
+
 
     return (
         <div className="d-flex column a-center">
             {/*<label htmlFor="w3review">Leave your comment:</label>*/}
-            <textarea className="card" ref={commentRef} id="w3review" name="w3review" rows="10" cols="100" placeholder="Leave your comment here..."/>
-            <input ref={urlRef}  type="text"/>
+            <textarea className="card small-area" ref={commentRef} id="w3review" name="w3review" rows="10" cols="100" placeholder="Leave your comment here..."/>
+            <input placeholder="Add URL here.." ref={urlRef}  type="text" />
             <button onClick={sendRequest}>Submit</button>
         </div>
     );

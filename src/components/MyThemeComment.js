@@ -4,7 +4,7 @@ const MyThemeComment = ({topic}) => {
     return (
         <div className="card">
 
-            <div className="d-flex s-evenly">
+            <div className="d-flex s-evenly small-screen-column">
                 <h3>{topic.title}</h3> <h3>author: {topic.username}</h3>
                 <p>Time: {new Intl.DateTimeFormat('lt-Lt', {
                     year: "numeric",

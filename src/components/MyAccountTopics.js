@@ -20,7 +20,13 @@ const MyAccountTopics = () => {
 
     return (
         <div>
-            {topics.map((x, i) => <SingleTopic topic={x} key={i} />)}
+            {topics.length > 0 ?
+                topics.map((x, i) => <SingleTopic topic={x} key={i} />
+
+                )
+            :   <div className="d-flex j-center">
+                    <h4 style={{color: "red"}}>No topics in the list</h4>
+                </div> }
         </div>
     );
 };

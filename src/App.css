@@ -98,3 +98,20 @@ input {
     width: 200px;
     margin: 5px;
 }
+@media (max-width: 800px) {
+    .small-area {
+        width: 80%;
+    }
+
+}
+
+@media (max-width: 576px) {
+    .small-screen-column {
+        flex-direction: column;
+        align-items: center;
+    }
+    .small-area {
+        width: 80%;
+    }
+
+}

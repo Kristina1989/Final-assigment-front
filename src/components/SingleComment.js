@@ -26,7 +26,7 @@ const SingleComment = ({comment}) => {
     }, [])
 
     return (
-        <div className="d-flex a-center card">
+        <div className="d-flex a-center card s-evenly small-screen-column">
             <div style={{margin: "20px 20px 0 20px",
                 alignItems: "center",
                 display: "flex",

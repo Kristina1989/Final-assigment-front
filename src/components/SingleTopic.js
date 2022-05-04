@@ -34,7 +34,7 @@ const SingleTopic = ({topic}) => {
 
     return (
         <div className="card">
-            <div className="d-flex s-evenly a-center">
+            <div className="d-flex s-evenly a-center small-screen-column">
                 <h2 className="topic-hover" onClick={() => nav("/" + topic._id)}>{topic.title} </h2> <h3 style={{color: "white"}}>by {topic.username}</h3>
                 <p style={{color: "white"}}>Comments: {topic.comments.length}</p>
                 <div className="favorite-symbol" onClick={addToFavorites}

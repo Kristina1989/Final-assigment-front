@@ -49,7 +49,7 @@ const Login = () => {
         <div className="d-flex j-center a-center column">
             <h1>LOGIN</h1>
             <input ref={usernameRef} type="text" placeholder="Username"/>
-            <input ref={passwordRef} type="text" placeholder="Password"/>
+            <input ref={passwordRef} type="password" placeholder="Password"/>
             <div>
 
                 <label style={{color: 'darksalmon'}} htmlFor="stayLoggedIn">Stay Logged</label>
