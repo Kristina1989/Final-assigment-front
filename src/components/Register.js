@@ -1,4 +1,4 @@
-import {useRef, useState} from 'react';
+import React, { useRef, useState } from 'react';
 import {useNavigate} from "react-router";
 
 const Register = () => {
@@ -35,7 +35,7 @@ const Register = () => {
             body: JSON.stringify(user)
         }
 
-        fetch(`http://localhost:4003/register`, options)
+        fetch(`http://localhost:4000/register`, options)
             .then(res => res.json())
             .then(data => {
                 if (data.success) {

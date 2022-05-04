@@ -12,16 +12,11 @@ const SingleThemePage = () => {
     const {theme} = useParams()
     const [topic, setTopic] = useState([])
 
-
-
     useEffect(() => {
-
         http.get("/getTheme/" + theme).then(res => {
-            console.log(res)
             if (res.success) {
                 setTopic(res.theme)
             }
-
         })
     }, [])
 

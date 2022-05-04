@@ -1,4 +1,4 @@
-import {useContext, useRef} from 'react';
+import React, {useContext, useRef} from 'react';
 import http from "../plugins/http";
 import mainContext from "../context/MainContext";
 
@@ -18,7 +18,6 @@ const UploadComment = ({topic, setTopic}) => {
 
         http.post("/uploadComment", comment).then(res => {
             if (res.success) {
-                console.log(res)
                 setTopic(res.topic)
             }
         })

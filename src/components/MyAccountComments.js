@@ -12,7 +12,6 @@ const MyAccountComments = () => {
     useEffect(() => {
         if (user?.username) {
             http.get("/getMyComments/" + user.username).then(res => {
-                console.log(res)
                 if (res.success) {
                     setComments(res.myComments)
                 }

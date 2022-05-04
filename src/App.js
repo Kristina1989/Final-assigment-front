@@ -1,7 +1,7 @@
 import './App.css';
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import MainContext from "./context/MainContext.js";
-import {useEffect, useState} from "react";
+import React,{useEffect, useState} from "react";
 import HomePage from "./pages/HomePage.js";
 import UploadThemePage from "./pages/UploadThemePage.js";
 import MyFavoritesPage from "./pages/MyFavoritesPage.js";

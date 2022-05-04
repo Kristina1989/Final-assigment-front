@@ -1,4 +1,4 @@
-import {useContext, useRef, useState} from 'react';
+import React, { useContext, useRef, useState } from 'react';
 import MyAccountTopics from "./MyAccountTopics";
 import MyAccountComments from "./MyAccountComments";
 import mainContext from "../context/MainContext";

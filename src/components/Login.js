@@ -1,4 +1,4 @@
-import {useContext, useRef, useState} from 'react';
+import React, { useContext, useRef, useState } from 'react';
 import {useNavigate} from "react-router";
 import MainContext from "../context/MainContext";
 
@@ -32,7 +32,7 @@ const Login = () => {
             body: JSON.stringify(user)
         }
 
-        fetch(`http://localhost:4003/login`, options)
+        fetch(`http://localhost:4000/login`, options)
             .then(res => res.json())
             .then(data => {
                 if (data.success) {

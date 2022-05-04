@@ -1,4 +1,4 @@
-import {useState, useEffect, useContext} from 'react';
+import React, {useState, useEffect, useContext} from 'react';
 import SingleTopic from "./SingleTopic";
 import http from "../plugins/http";
 import mainContext from "../context/MainContext";
